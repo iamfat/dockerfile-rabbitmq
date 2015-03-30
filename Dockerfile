@@ -17,4 +17,5 @@ RUN /usr/sbin/rabbitmq-plugins enable rabbitmq_management && \
 
 EXPOSE 5672 15672 4369
 
-CMD ["/usr/sbin/rabbitmq-server"]
+ADD start /start
+CMD ["/start"]
