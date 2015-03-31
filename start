@@ -1,4 +1,4 @@
 #!/bin/sh
 
-chmod -R rabbitmq:rabbitmq /var/lib/rabbitmq
+chown -R rabbitmq:rabbitmq /var/lib/rabbitmq
 /usr/sbin/rabbitmq-server
